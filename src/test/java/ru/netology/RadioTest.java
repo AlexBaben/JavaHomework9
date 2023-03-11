@@ -4,6 +4,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+
+    @Test
+    public void shouldSteNewAmountStations() {
+        Radio radio = new Radio(20);
+
+        int expected = 20;
+        int actual = radio.getAmountStations();
+        Assertions.assertEquals(expected, actual);
+    }
+
     @Test
     public void shouldSetStation() {
         Radio radio = new Radio();
